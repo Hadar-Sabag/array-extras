@@ -2,14 +2,16 @@
 
 // 38. Implement a function named biggerThan100. It receives an array of numbers and returns a new array containing only the numbers which are greater than 100.
 
-// var nums = [50, 100, 200, 300]
-// var newNums = [200, 300]
 
 // var nums = [50, 100, 200, 300]
+// var res = biggerThan100(nums)
+// console.log('res: ', res)
+// function biggerThan100(nums) {
+//     // var NewNums = nums.filter(function (num) { return num > 100 })
+//     var NewNums = nums.filter(num => num > 100)
+//     return NewNums
+// }
 
-// var NewNums = nums.filter(function (num) { return num > 100 })
-// var NewNums = nums.filter(num => num > 100)
-// console.log('NewNums: ', NewNums)
 
 
 
@@ -25,44 +27,14 @@ For example: INPUT: [3, 2, 0, 2, 2, 0, 3]
 EXPECTED: [2, 0, 3, 2] */
 
 
-var nums = [3, 2, 0, 2, 2, 0, 3]
-var counter = 0
-var countNums = nums.map(function (num, idx, nums) {
-    counter++
-    nums[num].push(counter)
-    counter = 0
-    return num
-})
-console.log('countNums: ', countNums)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var nums = [3, 2, 0, 2, 2, 0, 3]
+// var res = printNumsCount(nums)
+// console.log('res: ', res)
+// function printNumsCount(nums) {
+//     var counters = [0, 0, 0, 0]
+//     nums.forEach(num => counters[num]++)
+//     return counters
+// }
 
 
 
@@ -78,4 +50,22 @@ The function should return the modified array.  */
 
 
 
+// var nums = [1, 2, 3, 4]
 
+// 1.
+// var res = multBy(nums, 10)
+// console.log('res: ', res)
+// console.log('nums: ', nums)
+// function multBy(nums, multiplier) {
+//     nums.forEach((num, i) => nums[i] = num * multiplier)
+//     return nums
+// }
+
+// 2.
+// var res = multBy(nums, 10)
+// console.log('res: ', res)
+// console.log('nums: ', nums)
+// function multBy(nums, multiplier) {
+//     var copyNums = nums.map(num => num * multiplier)
+//     return copyNums
+// }
